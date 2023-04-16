@@ -6,7 +6,7 @@ if sexo=="F" or sexo=="M":
     if altura>=0.4 or altura<=3:
         if sexo=="F" or sexo=="f": #feminino
             peso=62.1*altura-44.7
-        else: #masculino #masculino
+        else: #masculino 
             peso=72.7*altura-58
         print(f"Seu peso ideal seria: {peso}")
     else: #erro
