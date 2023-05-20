@@ -1,9 +1,8 @@
 #sabino
 print("definir o maior numero, menor e media>")
-print(f"digite em ordem crescente")
-n1=int(input("Digite o primeiro numero:")) #ordem crescente
-n2=int(input("Digite o segundo numero:")) #ordem crescente
-n3=int(input("Digite o terceiro numero:")) #ordem crescente
+n1=float(input("Digite o primeiro numero: ")) #Valor1
+n2=float(input("Digite o segundo numero: ")) #Valor2
+n3=float(input("Digite o terceiro numero: ")) #Valor3
 if n1>0 and n2>0 and n3>0:
     if n1>n2 and n1>n3:
         maior=n1 #maior
