@@ -1,6 +1,6 @@
 print('<Preço de importação de 5 produtos>')
 
-j=int(input("<Digite quantos produtos irão ser importados: "))
+j=int(input("<Digite o valor 5: "))
 
 c = 1
 p1 = 0
