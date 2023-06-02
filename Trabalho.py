@@ -17,7 +17,6 @@ while True: #Menu de operações
                 break
         else:
             print("\n<A lista de contatos está cheia... \n<Exclua um contato para continuar... \n<Ou pague a versão premium para mais espaço de armazenamento.")
-
     elif op == "2": #Opção de numero 2 selecionada, Exclusão de um contato selecionado pelo usuario.
         nome = input("\nDigite o nome do contato para sua exclusão: ")
         for i, contato in enumerate(contatos):
@@ -27,17 +26,12 @@ while True: #Menu de operações
                 break
         else:
             print("Contato inexistente.")
-
     elif op == "3": #Opção de numero 3 selecionada, Listar todos os contatos e seus dados.
         print("\nLista de todos os contatos e seus dados:")
         for contato in contatos:
             if contato:
-                print("Nome:", contato[0] )
-                print("Telefone:", contato[1])
-                print("Empresa:", contato[2])
-                print("--------------------")
-
-    elif op == "4": #opção de nu mero 4 selecionada, Alteração de dados de um contato definido pelo usuario.
+                print("Nome:", contato[0], "\nTelefone:", contato[1] ,"\nEmpresa:", contato[2], "\n--------------------"  )
+    elif op == "4": #Opção de nu mero 4 selecionada, Alteração de dados de um contato definido pelo usuario.
         nome = input("\n<Alteração de dados... \n<Digite o nome do contato a ser modificado: ")
         for i, contato in enumerate(contatos):
             if contato and contato[0] == nome:
@@ -49,18 +43,14 @@ while True: #Menu de operações
                 break
         else:
             print("Contato inexistente.")
-
     elif op == "5": #Opção de numero 5 selecionada, Listar dados de um contato selecionado pelo usuario.
         nome = input("\nDigite o nome do contato para listar seus dados: ")
         for contato in contatos:
             if contato and contato[0] == nome:
-                print("Nome:", contato[0])
-                print("Telefone:", contato[1])
-                print("Empresa:", contato[2])
+                print("Nome:", contato[0], "\nTelefone:", contato[1], "\nEmpresa:", contato[2] )
                 break
         else:
             print("<Contato inexistente.")
-
     elif op == "6": #Opção de numero 6 selecionada, Finalizar sessão
         print("\nFinalizando sessão....\nBYE BYE :( ")
         break
